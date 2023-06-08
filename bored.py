@@ -36,9 +36,9 @@ if __name__ == "__main__":
       if chosen_category == "type":
         print("please choose education, recreational, social, diy, charity, cooking, relaxation, music, or busywork")
       if chosen_category == "price":
-        print("choose a number between 0 and 0.5")
+        print("please choose a number between 0 and 0.5")
       if chosen_category == "participants":
-        print("choose a number between 0 and 9")
+        print("please choose a number between 0 and 9")
       activity_type = input("Give the value to your chosen category (" + chosen_category + "): ")
       api_call = MakeApiCall("https://www.boredapi.com/api/activity?" + chosen_category + "=" + activity_type)
       done = input("Are you done (y or n)? ")
